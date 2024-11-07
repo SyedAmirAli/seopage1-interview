@@ -1,0 +1,770 @@
+
+    // const tasks: TaskProps[] = [
+    //     {
+    //         id: 2,
+    //         list: 2,
+    //         progressList: 2,
+    //         title: txt.slice(0, 25) + "...",
+    //         clients: [
+    //             { id: 3, name: "Bob Smith", image: "/man-1.jpg" },
+    //             { id: 4, name: "Alice Jones", image: "/man-2.jpg" },
+    //         ],
+    //         comments: {
+    //             recentComments: [
+    //                 { id: 3, name: "Bob Smith", image: "/man-2.jpg" },
+    //                 { id: 4, name: "Alice Jones", image: "/man-1.jpg" },
+    //             ],
+    //             count: 12,
+    //             attachment: 18,
+    //             calender: "15-01-2024",
+    //         },
+    //     },
+    //     {
+    //         id: 3,
+    //         list: 3,
+    //         progressList: 3,
+    //         title: txt.slice(0, 25) + "...",
+    //         clients: [
+    //             { id: 5, name: "Sarah Wilson", image: "/man-1.jpg" },
+    //             { id: 6, name: "Mike Brown", image: "/man-2.jpg" },
+    //         ],
+    //         comments: {
+    //             recentComments: [
+    //                 { id: 5, name: "Sarah Wilson", image: "/man-2.jpg" },
+    //                 { id: 6, name: "Mike Brown", image: "/man-1.jpg" },
+    //             ],
+    //             count: 8,
+    //             attachment: 15,
+    //             calender: "22-02-2024",
+    //         },
+    //     },
+    //     {
+    //         id: 4,
+    //         list: 4,
+    //         progressList: 4,
+    //         title: txt.slice(0, 25) + "...",
+    //         clients: [
+    //             { id: 7, name: "Emily Davis", image: "/man-1.jpg" },
+    //             { id: 8, name: "Tom Taylor", image: "/man-2.jpg" },
+    //         ],
+    //         comments: {
+    //             recentComments: [
+    //                 { id: 7, name: "Emily Davis", image: "/man-2.jpg" },
+    //                 { id: 8, name: "Tom Taylor", image: "/man-1.jpg" },
+    //             ],
+    //             count: 20,
+    //             attachment: 25,
+    //             calender: "10-03-2024",
+    //         },
+    //     },
+    //     {
+    //         id: 5,
+    //         list: 5,
+    //         progressList: 5,
+    //         title: txt.slice(0, 25) + "...",
+    //         clients: [
+    //             { id: 9, name: "Lisa Martin", image: "/man-1.jpg" },
+    //             { id: 10, name: "James Wilson", image: "/man-2.jpg" },
+    //         ],
+    //         comments: {
+    //             recentComments: [
+    //                 { id: 9, name: "Lisa Martin", image: "/man-2.jpg" },
+    //                 { id: 10, name: "James Wilson", image: "/man-1.jpg" },
+    //             ],
+    //             count: 10,
+    //             attachment: 16,
+    //             calender: "05-04-2024",
+    //         },
+    //     },
+    //     {
+    //         id: 6,
+    //         list: 6,
+    //         progressList: 6,
+    //         title: txt.slice(0, 25) + "...",
+    //         clients: [
+    //             { id: 11, name: "Amy Johnson", image: "/man-1.jpg" },
+    //             { id: 12, name: "David Lee", image: "/man-2.jpg" },
+    //         ],
+    //         comments: {
+    //             recentComments: [
+    //                 { id: 11, name: "Amy Johnson", image: "/man-2.jpg" },
+    //                 { id: 12, name: "David Lee", image: "/man-1.jpg" },
+    //             ],
+    //             count: 17,
+    //             attachment: 22,
+    //             calender: "20-05-2024",
+    //         },
+    //     },
+    // ];
+
+    // const tasks: TaskProps[] = [
+    //     {
+    //         id: 4,
+    //         list: 4,
+    //         progressList: 4,
+    //         title: txt.slice(0, 25) + "...",
+    //         clients: [
+    //             { id: 7, name: "Emily Davis", image: "/man-1.jpg" },
+    //             { id: 8, name: "Tom Taylor", image: "/man-2.jpg" },
+    //         ],
+    //         comment: {
+    //             recentComments: [
+    //                 { id: 7, name: "Emily Davis", image: "/man-2.jpg" },
+    //                 { id: 8, name: "Tom Taylor", image: "/man-1.jpg" },
+    //             ],
+    //             count: 20,
+    //         },
+    //         attachment: 25,
+    //         createdAt: "10-03-2024",
+    //     },
+    //     {
+    //         id: 5,
+    //         list: 5,
+    //         progressList: 5,
+    //         title: txt.slice(0, 25) + "...",
+    //         clients: [
+    //             { id: 9, name: "Lisa Martin", image: "/man-1.jpg" },
+    //             { id: 10, name: "James Wilson", image: "/man-2.jpg" },
+    //         ],
+    //         comment: {
+    //             recentComments: [
+    //                 { id: 9, name: "Lisa Martin", image: "/man-2.jpg" },
+    //                 { id: 10, name: "James Wilson", image: "/man-1.jpg" },
+    //             ],
+    //             count: 10,
+    //         },
+    //         attachment: 16,
+    //         createdAt: "05-04-2024",
+    //     },
+    //     {
+    //         id: 6,
+    //         list: 6,
+    //         progressList: 6,
+    //         title: txt.slice(0, 25) + "...",
+    //         clients: [
+    //             { id: 11, name: "Amy Johnson", image: "/man-1.jpg" },
+    //             { id: 12, name: "David Lee", image: "/man-2.jpg" },
+    //         ],
+    //         comment: {
+    //             recentComments: [
+    //                 { id: 11, name: "Amy Johnson", image: "/man-2.jpg" },
+    //                 { id: 12, name: "David Lee", image: "/man-1.jpg" },
+    //             ],
+    //             count: 17,
+    //         },
+    //         attachment: 22,
+    //         createdAt: "20-05-2024",
+    //     },
+    // ];
+
+    // const tasks = [
+    //     {
+    //         id: 1,
+    //         list: 1,
+    //         progressList: 1,
+    //         title: "Implement new user authentication system with biometric verification and two-factor authentication while ensuring compliance with security protocols and user privacy guidelines...",
+    //         clients: [
+    //             { id: 1, name: "John Doe", image: "/man-1.jpg" },
+    //             { id: 2, name: "Jane Smith", image: "/man-2.jpg" },
+    //         ],
+    //         comment: {
+    //             recentComments: [
+    //                 { id: 1, name: "John Doe", image: "/man-2.jpg" },
+    //                 { id: 2, name: "Jane Smith", image: "/man-1.jpg" },
+    //             ],
+    //             count: 15,
+    //         },
+    //         attachment: 12,
+    //         createdAt: "15-01-2024",
+    //     },
+    //     {
+    //         id: 2,
+    //         list: 2,
+    //         progressList: 2,
+    //         title: "Design and develop responsive dashboard interface with real-time data visualization, customizable widgets, and cross-browser compatibility for optimal user experience...",
+    //         clients: [
+    //             { id: 3, name: "Mike Brown", image: "/man-1.jpg" },
+    //             { id: 4, name: "Sarah Johnson", image: "/man-2.jpg" },
+    //         ],
+    //         comment: {
+    //             recentComments: [
+    //                 { id: 3, name: "Mike Brown", image: "/man-2.jpg" },
+    //                 { id: 4, name: "Sarah Johnson", image: "/man-1.jpg" },
+    //             ],
+    //             count: 8,
+    //         },
+    //         attachment: 18,
+    //         createdAt: "22-02-2024",
+    //     },
+    //     {
+    //         id: 3,
+    //         list: 3,
+    //         progressList: 3,
+    //         title: "Create comprehensive API documentation including endpoint specifications, request/response examples, authentication methods, and error handling procedures...",
+    //         clients: [
+    //             { id: 5, name: "Alex Wilson", image: "/man-1.jpg" },
+    //             { id: 6, name: "Rachel Green", image: "/man-2.jpg" },
+    //         ],
+    //         comment: {
+    //             recentComments: [
+    //                 { id: 5, name: "Alex Wilson", image: "/man-2.jpg" },
+    //                 { id: 6, name: "Rachel Green", image: "/man-1.jpg" },
+    //             ],
+    //             count: 12,
+    //         },
+    //         attachment: 20,
+    //         createdAt: "01-03-2024",
+    //     },
+    //     {
+    //         id: 4,
+    //         list: 4,
+    //         progressList: 4,
+    //         title: "Optimize database performance by implementing indexing strategies, query optimization, and caching mechanisms while maintaining data integrity and backup procedures...",
+    //         clients: [
+    //             { id: 7, name: "Emily Davis", image: "/man-1.jpg" },
+    //             { id: 8, name: "Tom Taylor", image: "/man-2.jpg" },
+    //         ],
+    //         comment: {
+    //             recentComments: [
+    //                 { id: 7, name: "Emily Davis", image: "/man-2.jpg" },
+    //                 { id: 8, name: "Tom Taylor", image: "/man-1.jpg" },
+    //             ],
+    //             count: 20,
+    //         },
+    //         attachment: 25,
+    //         createdAt: "10-03-2024",
+    //     },
+    //     {
+    //         id: 5,
+    //         list: 5,
+    //         progressList: 5,
+    //         title: "Develop automated testing suite including unit tests, integration tests, and end-to-end tests with comprehensive coverage reports and continuous integration pipeline...",
+    //         clients: [
+    //             { id: 9, name: "Lisa Martin", image: "/man-1.jpg" },
+    //             { id: 10, name: "James Wilson", image: "/man-2.jpg" },
+    //         ],
+    //         comment: {
+    //             recentComments: [
+    //                 { id: 9, name: "Lisa Martin", image: "/man-2.jpg" },
+    //                 { id: 10, name: "James Wilson", image: "/man-1.jpg" },
+    //             ],
+    //             count: 10,
+    //         },
+    //         attachment: 16,
+    //         createdAt: "05-04-2024",
+    //     },
+    //     {
+    //         id: 6,
+    //         list: 6,
+    //         progressList: 6,
+    //         title: "Implement secure file upload system with virus scanning, format validation, and cloud storage integration while maintaining scalability and performance requirements...",
+    //         clients: [
+    //             { id: 11, name: "Amy Johnson", image: "/man-1.jpg" },
+    //             { id: 12, name: "David Lee", image: "/man-2.jpg" },
+    //         ],
+    //         comment: {
+    //             recentComments: [
+    //                 { id: 11, name: "Amy Johnson", image: "/man-2.jpg" },
+    //                 { id: 12, name: "David Lee", image: "/man-1.jpg" },
+    //             ],
+    //             count: 17,
+    //         },
+    //         attachment: 22,
+    //         createdAt: "20-05-2024",
+    //     },
+    // ];
+// const txt: string =
+//     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."; // write 200 char's text
+
+// // interface TaskProps {
+// //     id: number;
+// //     list: number;
+// //     progressList: number;
+// //     title: string;
+// //     clients: {
+// //         id: number;
+// //         name: string;
+// //         image: string;
+// //     }[];
+// //     comments: {
+// //         recentComments: {
+// //             id: number;
+// //             name: string;
+// //             image: string;
+// //         }[];
+// //         count: number;
+// //         attachment: number;
+// //         calender: string;
+// //     };
+// // }
+
+
+const tasks: TaskProps[] = [
+    {
+        id: 1,
+        list: 5,
+        progressList: 3,
+        title: "Implement new user authentication system with biometric verification and two-factor authentication while ensuring compliance with security protocols and user privacy guidelines...",
+        clients: [
+            { id: 1, name: "John Doe", image: "/man-1.jpg" },
+            { id: 2, name: "Jane Smith", image: "/man-2.jpg" },
+        ],
+        contributor: {
+            count: 4,
+            recentContributors: [
+                { id: 1, name: "John Doe", image: "/man-2.jpg" },
+                { id: 2, name: "Jane Smith", image: "/man-1.jpg" },
+            ],
+        },
+        commentCount: 15,
+        attachment: 12,
+        createdAt: "01-01-2024",
+    },
+    {
+        id: 2,
+        list: 8,
+        progressList: 5,
+        title: "Develop automated testing suite including unit tests, integration tests, and end-to-end tests with comprehensive coverage reports and continuous integration pipeline...",
+        clients: [
+            { id: 3, name: "Bob Smith", image: "/man-1.jpg" },
+            { id: 4, name: "Alice Jones", image: "/man-2.jpg" },
+        ],
+        contributor: {
+            count: 6,
+            recentContributors: [
+                { id: 3, name: "Bob Smith", image: "/man-2.jpg" },
+                { id: 4, name: "Alice Jones", image: "/man-1.jpg" },
+            ],
+        },
+        commentCount: 12,
+        attachment: 18,
+        createdAt: "15-01-2024",
+    },
+    {
+        id: 3,
+        list: 10,
+        progressList: 6,
+        title: "Implement secure file upload system with virus scanning, format validation, and cloud storage integration while maintaining scalability and performance requirements...",
+        clients: [
+            { id: 5, name: "Sarah Wilson", image: "/man-1.jpg" },
+            { id: 6, name: "Mike Brown", image: "/man-2.jpg" },
+        ],
+        contributor: {
+            count: 3,
+            recentContributors: [
+                { id: 5, name: "Sarah Wilson", image: "/man-2.jpg" },
+                { id: 6, name: "Mike Brown", image: "/man-1.jpg" },
+            ],
+        },
+        commentCount: 8,
+        attachment: 15,
+        createdAt: "22-02-2024",
+    },
+    {
+        id: 4,
+        list: 12,
+        progressList: 7,
+        title: "Design and implement real-time collaboration features with WebSocket integration, conflict resolution, and synchronized state management across multiple users...",
+        clients: [
+            { id: 7, name: "Emily Davis", image: "/man-1.jpg" },
+            { id: 8, name: "Tom Taylor", image: "/man-2.jpg" },
+        ],
+        contributor: {
+            count: 5,
+            recentContributors: [
+                { id: 7, name: "Emily Davis", image: "/man-2.jpg" },
+                { id: 8, name: "Tom Taylor", image: "/man-1.jpg" },
+            ],
+        },
+        commentCount: 10,
+        attachment: 20,
+        createdAt: "10-03-2024",
+    },
+    {
+        id: 5,
+        list: 15,
+        progressList: 8,
+        title: "Optimize database performance through query optimization, indexing strategies, and caching mechanisms while maintaining data consistency...",
+        clients: [
+            { id: 9, name: "Chris Martin", image: "/man-1.jpg" },
+            { id: 10, name: "James Wilson", image: "/man-2.jpg" },
+        ],
+        contributor: {
+            count: 4,
+            recentContributors: [
+                { id: 9, name: "Chris Martin", image: "/man-2.jpg" },
+                { id: 10, name: "James Wilson", image: "/man-1.jpg" },
+            ],
+        },
+        commentCount: 14,
+        attachment: 16,
+        createdAt: "05-04-2024",
+    },
+    {
+        id: 6,
+        list: 18,
+        progressList: 9,
+        title: "Implement advanced authentication system with multi-factor authentication, OAuth integration, and role-based access control...",
+        clients: [
+            { id: 11, name: "Amy Johnson", image: "/man-1.jpg" },
+            { id: 12, name: "David Lee", image: "/man-2.jpg" },
+        ],
+        contributor: {
+            count: 6,
+            recentContributors: [
+                { id: 11, name: "Amy Johnson", image: "/man-2.jpg" },
+                { id: 12, name: "David Lee", image: "/man-1.jpg" },
+            ],
+        },
+        commentCount: 17,
+        attachment: 22,
+        createdAt: "20-04-2024",
+    },
+    {
+        id: 7,
+        list: 20,
+        progressList: 10,
+        title: "Develop mobile-responsive UI components with cross-browser compatibility and progressive enhancement for optimal user experience...",
+        clients: [
+            { id: 13, name: "Lisa Chen", image: "/man-1.jpg" },
+            { id: 14, name: "Mark Thompson", image: "/man-2.jpg" },
+        ],
+        contributor: {
+            count: 3,
+            recentContributors: [
+                { id: 13, name: "Lisa Chen", image: "/man-2.jpg" },
+                { id: 14, name: "Mark Thompson", image: "/man-1.jpg" },
+            ],
+        },
+        commentCount: 9,
+        attachment: 14,
+        createdAt: "01-05-2024",
+    },
+    {
+        id: 8,
+        list: 22,
+        progressList: 11,
+        title: "Implement data visualization dashboard with interactive charts, real-time updates, and customizable reporting features...",
+        clients: [
+            { id: 15, name: "Rachel Green", image: "/man-1.jpg" },
+            { id: 16, name: "Kevin White", image: "/man-2.jpg" },
+        ],
+        contributor: {
+            count: 5,
+            recentContributors: [
+                { id: 15, name: "Rachel Green", image: "/man-2.jpg" },
+                { id: 16, name: "Kevin White", image: "/man-1.jpg" },
+            ],
+        },
+        commentCount: 13,
+        attachment: 19,
+        createdAt: "15-05-2024",
+    },
+];
+
+const cards: CardProps[] = [
+    { id: 1, title: "Incomplete", color: "red", count: 0, tasks },
+    { id: 2, title: "To Do", color: "cyan", count: 0, tasks },
+    { id: 3, title: "Doing", color: "yellow", count: 0, tasks },
+    { id: 4, title: "Under Review", color: "", count: 0, tasks },
+    { id: 5, title: "Completed", color: "", count: 0, tasks },
+    { id: 6, title: "Over Completed", color: "", count: 0, tasks },
+];
+
+
+<?php
+
+$tasks = [
+    [
+        'id' => 1,
+        'list' => 5,
+        'progressList' => 3,
+        'title' => "Implement new user authentication system with biometric verification and two-factor authentication while ensuring compliance with security protocols and user privacy guidelines...",
+        'clients' => [
+            ['id' => 1, 'name' => "John Doe", 'image' => "/man-1.jpg"],
+            ['id' => 2, 'name' => "Jane Smith", 'image' => "/man-2.jpg"],
+        ],
+        'contributor' => [
+            'count' => 4,
+            'recentContributors' => [
+                ['id' => 1, 'name' => "John Doe", 'image' => "/man-2.jpg"],
+                ['id' => 2, 'name' => "Jane Smith", 'image' => "/man-1.jpg"],
+            ],
+        ],
+        'commentCount' => 15,
+        'attachment' => 12,
+        'createdAt' => "01-01-2024",
+    ],
+    [
+        'id' => 2,
+        'list' => 8,
+        'progressList' => 5,
+        'title' => "Develop automated testing suite including unit tests, integration tests, and end-to-end tests with comprehensive coverage reports and continuous integration pipeline...",
+        'clients' => [
+            ['id' => 3, 'name' => "Bob Smith", 'image' => "/man-1.jpg"],
+            ['id' => 4, 'name' => "Alice Jones", 'image' => "/man-2.jpg"],
+        ],
+        'contributor' => [
+            'count' => 6,
+            'recentContributors' => [
+                ['id' => 3, 'name' => "Bob Smith", 'image' => "/man-2.jpg"],
+                ['id' => 4, 'name' => "Alice Jones", 'image' => "/man-1.jpg"],
+            ],
+        ],
+        'commentCount' => 12,
+        'attachment' => 18,
+        'createdAt' => "15-01-2024",
+    ],
+    [
+        'id' => 3,
+        'list' => 10,
+        'progressList' => 6,
+        'title' => "Implement secure file upload system with virus scanning, format validation, and cloud storage integration while maintaining scalability and performance requirements...",
+        'clients' => [
+            ['id' => 5, 'name' => "Sarah Wilson", 'image' => "/man-1.jpg"],
+            ['id' => 6, 'name' => "Mike Brown", 'image' => "/man-2.jpg"],
+        ],
+        'contributor' => [
+            'count' => 3,
+            'recentContributors' => [
+                ['id' => 5, 'name' => "Sarah Wilson", 'image' => "/man-2.jpg"],
+                ['id' => 6, 'name' => "Mike Brown", 'image' => "/man-1.jpg"],
+            ],
+        ],
+        'commentCount' => 8,
+        'attachment' => 15,
+        'createdAt' => "22-02-2024",
+    ],
+    [
+        'id' => 4,
+        'list' => 12,
+        'progressList' => 7,
+        'title' => "Design and implement real-time collaboration features with WebSocket integration, conflict resolution, and synchronized state management across multiple users...",
+        'clients' => [
+            ['id' => 7, 'name' => "Emily Davis", 'image' => "/man-1.jpg"],
+            ['id' => 8, 'name' => "Tom Taylor", 'image' => "/man-2.jpg"],
+        ],
+        'contributor' => [
+            'count' => 5,
+            'recentContributors' => [
+                ['id' => 7, 'name' => "Emily Davis", 'image' => "/man-2.jpg"],
+                ['id' => 8, 'name' => "Tom Taylor", 'image' => "/man-1.jpg"],
+            ],
+        ],
+        'commentCount' => 10,
+        'attachment' => 20,
+        'createdAt' => "10-03-2024",
+    ],
+    [
+        'id' => 5,
+        'list' => 15,
+        'progressList' => 8,
+        'title' => "Optimize database performance through query optimization, indexing strategies, and caching mechanisms while maintaining data consistency...",
+        'clients' => [
+            ['id' => 9, 'name' => "Chris Martin", 'image' => "/man-1.jpg"],
+            ['id' => 10, 'name' => "James Wilson", 'image' => "/man-2.jpg"],
+        ],
+        'contributor' => [
+            'count' => 4,
+            'recentContributors' => [
+                ['id' => 9, 'name' => "Chris Martin", 'image' => "/man-2.jpg"],
+                ['id' => 10, 'name' => "James Wilson", 'image' => "/man-1.jpg"],
+            ],
+        ],
+        'commentCount' => 14,
+        'attachment' => 16,
+        'createdAt' => "05-04-2024",
+    ],
+    [
+        'id' => 6,
+        'list' => 18,
+        'progressList' => 9,
+        'title' => "Implement advanced authentication system with multi-factor authentication, OAuth integration, and role-based access control...",
+        'clients' => [
+            ['id' => 11, 'name' => "Amy Johnson", 'image' => "/man-1.jpg"],
+            ['id' => 12, 'name' => "David Lee", 'image' => "/man-2.jpg"],
+        ],
+        'contributor' => [
+            'count' => 6,
+            'recentContributors' => [
+                ['id' => 11, 'name' => "Amy Johnson", 'image' => "/man-2.jpg"],
+                ['id' => 12, 'name' => "David Lee", 'image' => "/man-1.jpg"],
+            ],
+        ],
+        'commentCount' => 17,
+        'attachment' => 22,
+        'createdAt' => "20-04-2024",
+    ],
+    [
+        'id' => 7,
+        'list' => 20,
+        'progressList' => 10,
+        'title' => "Develop mobile-responsive UI components with cross-browser compatibility and progressive enhancement for optimal user experience...",
+        'clients' => [
+            ['id' => 13, 'name' => "Lisa Chen", 'image' => "/man-1.jpg"],
+            ['id' => 14, 'name' => "Mark Thompson", 'image' => "/man-2.jpg"],
+        ],
+        'contributor' => [
+            'count' => 3,
+            'recentContributors' => [
+                ['id' => 13, 'name' => "Lisa Chen", 'image' => "/man-2.jpg"],
+                ['id' => 14, 'name' => "Mark Thompson", 'image' => "/man-1.jpg"],
+            ],
+        ],
+        'commentCount' => 9,
+        'attachment' => 14,
+        'createdAt' => "01-05-2024",
+    ],
+    [
+        'id' => 8,
+        'list' => 22,
+        'progressList' => 11,
+        'title' => "Implement data visualization dashboard with interactive charts, real-time updates, and customizable reporting features...",
+        'clients' => [
+            ['id' => 15, 'name' => "Rachel Green", 'image' => "/man-1.jpg"],
+            ['id' => 16, 'name' => "Kevin White", 'image' => "/man-2.jpg"],
+        ],
+        'contributor' => [
+            'count' => 5,
+            'recentContributors' => [
+                ['id' => 15, 'name' => "Rachel Green", 'image' => "/man-2.jpg"],
+                ['id' => 16, 'name' => "Kevin White", 'image' => "/man-1.jpg"],
+            ],
+        ],
+        'commentCount' => 13,
+        'attachment' => 19,
+        'createdAt' => "15-05-2024",
+    ],
+];
+
+$cards = [
+    ['id' => 1, 'title' => 'Incomplete', 'color' => 'red', 'count' => 0, 'tasks' => $tasks],
+    ['id' => 2, 'title' => 'To Do', 'color' => 'cyan', 'count' => 0, 'tasks' => $tasks],
+    ['id' => 3, 'title' => 'Doing', 'color' => 'yellow', 'count' => 0, 'tasks' => $tasks],
+    ['id' => 4, 'title' => 'Under Review', 'color' => '', 'count' => 0, 'tasks' => $tasks],
+    ['id' => 5, 'title' => 'Completed', 'color' => '', 'count' => 0, 'tasks' => $tasks],
+    ['id' => 6, 'title' => 'Over Completed', 'color' => '', 'count' => 0, 'tasks' => $tasks]
+];
+
+# Basic GET request
+curl http://localhost:3001
+
+# POST request with data
+curl -X POST -H "Content-Type: application/json" -d '{"key":"value"}' http://localhost:3001
+
+# PUT request
+curl -X PUT -H "Content-Type: application/json" -d '{"key":"value"}' http://localhost:3001
+
+# DELETE request
+curl -X DELETE http://localhost:3001
+
+# GET request with headers
+curl -H "Authorization: Bearer token123" http://localhost:3001
+
+# Download output to file
+curl -o output.json http://localhost:3001
+
+# Verbose output for debugging
+curl -v http://localhost:3001
+
+// import { Dispatch } from "react";
+// import { AppAction, CardProps, ModalProps } from "../types";
+// import { API_URL, INITIATE_DATA, TOGGLE_MODAL } from "./actionsTypes";
+
+// export const openModal = (payload: ModalProps) =>
+//     ({ type: TOGGLE_MODAL, payload } as AppAction);
+
+// export const closeModal = (payload?: ModalProps) =>
+//     ({
+//         type: TOGGLE_MODAL,
+//         payload: payload || {
+//             status: false,
+//             taskId: undefined,
+//             cardId: undefined,
+//         },
+//     } as AppAction);
+
+// // export const uploadAttachments = (payload: UploadAttachmentsProps) =>
+// // ({ type: UPLOAD_ATTACHMENTS, payload } as AppAction);
+
+// export const initiateData = (payload: CardProps) =>
+//     ({ type: INITIATE_DATA, payload } as AppAction);
+
+// export async function InitiateData(dispatch: Dispatch<AppAction>) {
+//     // return async (dispatch: Dispatch<AppAction>) => {
+//     const response = await fetch(`${API_URL}/`);
+//     const data = await response.json();
+//     dispatch(initiateData(data));
+//     // };
+// }
+
+
+
+            // const attachment:AttachmentProps = action.payload;
+            // console.log("Upload Attachment:", attachment);
+
+            // const payload:({cardId:number, taskId:number} & AttachmentProps) = action.payload as {cardId:number, taskId:number} & AttachmentProps;
+
+            /* if (payload) {
+                // Find the specific card by `cardId`.
+                const findCardIndex = state.cardsData.cards?.findIndex(
+                    (card) => card.id === payload.cardId
+                );
+
+                if (findCardIndex === -1 || findCardIndex === undefined) {
+                    // If the card isn't found, return the original state
+                    return state;
+                }
+
+                const findCard = state.cardsData.cards?.[findCardIndex];
+
+                // Find the specific task by `taskId` within the found card.
+                const findTaskIndex = findCard?.tasks?.findIndex(
+                    (task) => task.id === payload.taskId
+                );
+
+                if (findTaskIndex === -1 || findTaskIndex === undefined) {
+                    // If the task isn't found, return the original state
+                    return state;
+                }
+
+                const findTask = findCard?.tasks?.[findTaskIndex];
+
+                // Update the attachments array with the new attachment from the payload
+                const newAttachments = [
+                    payload,
+                    ...(findTask?.attachments || []),
+                ];
+
+                // Create a new task with the updated attachments
+                const updatedTask = {
+                    ...findTask,
+                    attachments: newAttachments,
+                };
+
+                // Update the tasks array with the updated task
+                const updatedTasks = [
+                    ...(findCard?.tasks?.slice(0, findTaskIndex) || []),
+                    updatedTask,
+                    ...(findCard?.tasks?.slice(findTaskIndex + 1) || []),
+                ];
+
+                // Create a new card with the updated tasks
+                const updatedCard = { ...findCard, tasks: updatedTasks };
+
+                // Update the cards array with the updated card
+                const updatedCards = [
+                    ...(state.cardsData.cards?.slice(0, findCardIndex) || []),
+                    updatedCard,
+                    ...(state.cardsData.cards?.slice(findCardIndex + 1) || []),
+                ] as CardProps[];
+
+                // Return the new state with the updated cardsData
+                return {
+                    ...state,
+                    cardsData: {
+                        ...state.cardsData,
+                        cards: updatedCards || [],
+                    },
+                };
+            } */
