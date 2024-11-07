@@ -700,6 +700,53 @@ curl -v http://localhost:3001
 
 
 
+<!-- # Task Manager App
+
+## Installation
+
+### Server Setup
+
+-   Navigate to the server directory:
+
+```bash
+cd server
+```
+
+-   Run the server:
+
+```bash
+php -S localhost:3001
+```
+
+-   After successfully running the server, you can access the API at `http://localhost:3001`. and you need to define the `API_URL` in the `.env` file in the client directory.
+
+### Client Setup
+
+-   Clone the repository:
+
+```bash
+git clone https://github.com/your-repo/..git
+```
+
+-   Navigate to the client directory:
+
+```bash
+cd client
+```
+
+-   Install dependencies:
+
+```bash
+npm install
+```
+
+-   Start the development server:
+
+```bash
+npm run dev
+``` -->
+
+
             // const attachment:AttachmentProps = action.payload;
             // console.log("Upload Attachment:", attachment);
 

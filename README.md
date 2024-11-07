@@ -19,7 +19,7 @@ A simple Task Manager application with a PHP backend and a modern JavaScript fro
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-repo/task-manager.git
+git clone https://github.com/SyedAmirAli/seopage1-interview.git
 ```
 
 ---
@@ -31,7 +31,7 @@ git clone https://github.com/your-repo/task-manager.git
 1. **Navigate to the server directory**:
 
     ```bash
-    cd task-manager/server
+    cd ./server
     ```
 
 2. **Start the PHP Development Server**:
@@ -59,7 +59,7 @@ git clone https://github.com/your-repo/task-manager.git
 1. **Navigate to the client directory**:
 
     ```bash
-    cd ../client
+    cd ./client
     ```
 
 2. **Install dependencies**:
@@ -104,49 +104,3 @@ Once both servers are running, you can view and interact with the Task Manager a
 ---
 
 Happy task managing!
-
-<!-- # Task Manager App
-
-## Installation
-
-### Server Setup
-
--   Navigate to the server directory:
-
-```bash
-cd server
-```
-
--   Run the server:
-
-```bash
-php -S localhost:3001
-```
-
--   After successfully running the server, you can access the API at `http://localhost:3001`. and you need to define the `API_URL` in the `.env` file in the client directory.
-
-### Client Setup
-
--   Clone the repository:
-
-```bash
-git clone https://github.com/your-repo/task-manager.git
-```
-
--   Navigate to the client directory:
-
-```bash
-cd client
-```
-
--   Install dependencies:
-
-```bash
-npm install
-```
-
--   Start the development server:
-
-```bash
-npm run dev
-``` -->
