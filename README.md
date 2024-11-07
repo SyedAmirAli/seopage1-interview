@@ -83,7 +83,7 @@ git clone https://github.com/SyedAmirAli/seopage1-interview.git
 ### Accessing the Application
 
 -   **API**: Accessible at [http://localhost:3001](http://localhost:3001)
--   **Frontend**: Accessible at [http://localhost:3000](http://localhost:3000)
+-   **Frontend**: Accessible at [http://localhost:5173](http://localhost:5173)
 
 Once both servers are running, you can view and interact with the Task Manager app in your browser.
 
