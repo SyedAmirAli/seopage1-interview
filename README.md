@@ -47,7 +47,7 @@ git clone https://github.com/SyedAmirAli/seopage1-interview.git
     After the server is running, define the `API_URL` in the `.env` file in the client directory as follows:
 
     ```dotenv
-    API_URL=http://localhost:3001
+    VITE_API_URL=http://localhost:3001
     ```
 
 ---
